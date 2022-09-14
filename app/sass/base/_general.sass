@@ -1,0 +1,99 @@
+html
+    box-sizing: border-box
+    min-height: 100%
+
+*, *:before, *:after
+    margin: 0
+    padding: 0
+    box-sizing: inherit
+
+body
+    min-height: 100vh
+    font-family: $fontMain
+    color: $black_light
+    position: relative
+    font-weight: 400
+    font-size: 17px
+    line-height: 20px
+    background: #F3F5FA
+
+a[href^="tel:"]
+    white-space: nowrap
+
+input, button, textarea
+    font-family: $fontMain
+    // border: none 
+    outline: none
+    -webkit-appearance: none
+
+button
+    background: none
+
+textarea
+    resize: none
+
+input[type="submit"]
+    cursor: pointer
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+    -webkit-appearance: none
+    margin: 0
+
+ul
+    margin: 14px 0
+    padding: 0
+    list-style: none
+
+img
+    max-width: 100%
+    max-height: 100%
+
+p
+    margin: 12px 0
+
+h1
+    // margin-bottom: 11px
+    margin-bottom: 24px
+    font-weight: 700
+    font-size: 36px
+    line-height: 38px
+    letter-spacing: -1px
+
+h2 
+    margin: 0 0 12px
+    font-weight: 700
+    font-size: 30px
+    line-height: 35px
+
+h3
+    margin: 0 0 8px
+    font-weight: 700
+    font-size: 24px
+    line-height: 28px
+
+a 
+    text-decoration: none 
+    +transitionDefault
+    &:hover 
+        text-decoration: none
+
+body.overflow 
+    height: 100vh
+    overflow: hidden
+
+body 
+    display: flex 
+    flex-direction: column 
+
+.main-content 
+    flex: auto
+
+.subtitle
+    margin-bottom: 24px
+    font-size: 24px
+    line-height: 28px
+
+
+
+
