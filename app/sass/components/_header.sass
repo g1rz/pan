@@ -1,0 +1,57 @@
+.header 
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    padding: 20px 0
+    background: $black_light
+    color: #fff
+    &__row 
+        display: flex 
+        align-items: center
+        justify-content: space-between
+
+.logo
+    display: block 
+    width: 75px
+    &__img 
+        display: block
+
+.main-menu 
+    display: flex
+    margin: 0
+    padding: 0
+    list-style: none 
+
+    &__item 
+        margin-right: 46px
+
+    &__link 
+        display: block 
+        padding: 10px 20px 
+        font-weight: 700
+        font-size: 16px
+        line-height: 20px
+        color: #fff 
+        border-radius: 100px
+        &:hover 
+            background: rgba($gray_light, 0.2)
+
+        &:active, &.active 
+            background: $main_color
+
+        &--parent 
+            position: relative
+            padding-right: 40px
+            &::after
+                content: ''
+                position: absolute
+                top: 50%
+                right: 15px
+                transform: translateY(-50%)
+                width: 8px
+                height: 8px
+                background: url('../img/sprite.svg#angle-down-white') no-repeat center 
+                background-size: contain
+
+        
