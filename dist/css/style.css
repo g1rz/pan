@@ -222,4 +222,76 @@ body {
             transform: rotate(360deg);
   }
 }
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 0;
+  background: #2C2E3E;
+  color: #fff;
+}
+.header__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo {
+  display: block;
+  width: 75px;
+}
+.logo__img {
+  display: block;
+}
+
+.main-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-menu__item {
+  margin-right: 46px;
+}
+.main-menu__link {
+  display: block;
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  border-radius: 100px;
+}
+.main-menu__link:hover {
+  background: rgba(143, 149, 172, 0.2);
+}
+.main-menu__link:active, .main-menu__link.active {
+  background: #FF2D23;
+}
+.main-menu__link--parent {
+  position: relative;
+  padding-right: 40px;
+}
+.main-menu__link--parent::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background: url("../img/sprite.svg#angle-down-white") no-repeat center;
+  background-size: contain;
+}
 /*# sourceMappingURL=style.css.map */
