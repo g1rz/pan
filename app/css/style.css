@@ -718,6 +718,12 @@ body {
   overflow: hidden;
 }
 
+.text-big {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 34px;
+}
+
 @-webkit-keyframes fadeInUp {
   0% {
     display: none;
@@ -1169,6 +1175,54 @@ body {
 .progressbar-btn {
   min-width: 180px;
   margin-right: 30px;
+}
+
+.more-block.active .more-block__inner {
+  display: block;
+}
+.more-block__inner {
+  display: none;
+}
+.more-block__toggle {
+  position: relative;
+  margin-top: 30px;
+  padding-right: 14px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #8F95AC;
+  border: none;
+  cursor: pointer;
+}
+.more-block__toggle:hover {
+  color: #FF2D23;
+}
+.more-block__toggle:hover .more-block__toggle-icon {
+  stroke: #FF2D23;
+}
+.more-block__toggle.active .more-block__toggle-icon {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.more-block__toggle.active .more-block__toggle-open {
+  display: none;
+}
+.more-block__toggle.active .more-block__toggle-close {
+  display: inline;
+}
+.more-block__toggle-close {
+  display: none;
+}
+.more-block__toggle-icon {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  stroke: #8F95AC;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .intro {
